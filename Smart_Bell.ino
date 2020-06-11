@@ -1,4 +1,4 @@
-da #define WIFI_NAME "Wifi SSID"
+#define WIFI_NAME "Wifi SSID"
 #define WIFI_PASSWORD "Wifi Password"
 #define DEVICE_ID 5 //Device ID
 #define DEVICE_NAME "Smart bell"
@@ -12,8 +12,10 @@ da #define WIFI_NAME "Wifi SSID"
 
 #define FLASH_PIN 4 // GPIO4 for flash LED
 #define LOCK 12 // GPIO12 for Lock relay
-#define BTN_PIN 13 // GPIO13 for button input 
+#define BTN_PIN 13 // GPIO13 for button input             
 #define BTN_LED_PIN 14 // GPIO14 for button click signal
+
+//If using ESP-EYE GPIO13 and GPIO14 used above must be changed
 
 #define repeatingSendTimeoutSeconds 30
 #define secondsWhileUnlocked 5
@@ -38,7 +40,6 @@ String timeStamp;
 //#define CAMERA_MODEL_ESP_EYE
 //#define CAMERA_MODEL_M5STACK_PSRAM
 //#define CAMERA_MODEL_M5STACK_WIDE
-//#define CAMERA_MODEL_AI_THINKER
 
 #include "camera_pins.h"
 
